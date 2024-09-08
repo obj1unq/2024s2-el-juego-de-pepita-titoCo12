@@ -1,6 +1,8 @@
+import wollok.game.*
 
 object pepita {
 	var energia = 100
+	var property position = game.at(3,5)
 
 	method comer(comida) {
 		energia = energia + comida.energiaQueOtorga()
@@ -14,5 +16,6 @@ object pepita {
 		return energia
 	}
 
+	method image() = "pepita.png"
 }
 
