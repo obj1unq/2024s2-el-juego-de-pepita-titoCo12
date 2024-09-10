@@ -1,4 +1,5 @@
 import wollok.game.*
+import posiciones.*
 
 object pepita {
 	var energia = 100
@@ -6,6 +7,10 @@ object pepita {
 
 	method comer(comida) {
 		energia = energia + comida.energiaQueOtorga()
+	}
+
+	method mover(dir) {
+		position = dir.sigPosicion(self.position())
 	}
 
 	method volar(kms) {
