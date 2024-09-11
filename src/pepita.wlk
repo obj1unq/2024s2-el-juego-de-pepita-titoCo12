@@ -14,6 +14,7 @@ object pepita {
 
 	method mover(dir) {
 		position = dir.sigPosicion(self.position())
+		energia -= 9
 	}
 
 	method volar(kms) {
@@ -28,13 +29,17 @@ object pepita {
 		return if (self.estaEnDestino()) {
 			"-grande"
 		} 
-		else if (self.estaAtrapada()) {
+		else if (self.estaAtrapada() or self.estaCansada()) {
 			"-gris"
 		}
 		else {
 			""
 		}
 			
+	}
+
+	method estaCansada() {
+		return (energia <= 0)
 	}
 
 	method image() {
