@@ -10,7 +10,9 @@ program pepitaGame {
 	game.cellSize(50) 		//valor por defecto 50
 	//search assets in assets folder, for example, for the background
 	game.boardGround("fondo2.jpg")
+	game.addVisual(nido)
 	game.addVisual(pepita)
+	game.addVisual(silvestre)
 	keyboard.up().onPressDo({pepita.mover(arriba)})
 	keyboard.left().onPressDo({pepita.mover(izquierda)})
 	keyboard.down().onPressDo({pepita.mover(abajo)})
