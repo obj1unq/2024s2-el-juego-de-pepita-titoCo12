@@ -1922,3 +1922,11 @@
 {"level":"info","message":"⌛ Validating src/pepita.wlk","timeElapsed":113,"timestamp":"2024-09-11T17:12:59.760Z"}
 {"level":"info","message":"⌛ Validating src/pepita.wlk","timeElapsed":104,"timestamp":"2024-09-11T17:13:00.121Z"}
 {"level":"info","message":"🚀 Program executed src.pepitaGame.pepitaGame on c:\\Users\\Joaco\\Desktop\\Prog\\progObjetos1\\2024s2-el-juego-de-pepita-titoCo12","ok":true,"timeElapsed":354,"timestamp":"2024-09-11T18:19:09.807Z"}
+{"level":"info","message":"⌛ Validating src/pepitaGame.wpgm","timeElapsed":119,"timestamp":"2024-09-11T18:19:18.740Z"}
+{"level":"info","message":"onRequest - completionItem/resolve","timestamp":"2024-09-11T18:19:18.742Z"}
+{"level":"info","message":"⌛ Validating src/pepitaTest.wtest","timeElapsed":108,"timestamp":"2024-09-11T18:20:00.274Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":110,"timestamp":"2024-09-11T18:20:15.889Z"}
+{"level":"info","message":"⌛ Validating src/comidas.wlk","timeElapsed":108,"timestamp":"2024-09-11T18:20:16.011Z"}
+{"level":"info","message":"⌛ Validating src/posiciones.wlk","timeElapsed":106,"timestamp":"2024-09-11T18:20:19.090Z"}
+{"level":"info","message":"⌛ Validating src/extras.wlk","timeElapsed":104,"timestamp":"2024-09-11T18:21:38.579Z"}
+{"level":"info","message":"⌛ Validating src/pepitaGame.wpgm","timeElapsed":110,"timestamp":"2024-09-11T18:21:38.691Z"}
