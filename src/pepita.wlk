@@ -20,7 +20,7 @@ object pepita {
 	}
 
 	method mover(dir) {
-		if (not(self.estaCansada())) {
+		if (not(self.estaCansada()) and not(dir.sigEsBorde())) {
 			position = dir.sigPosicion(self.position()) 
 			self.bajarEnergia()
 		}
@@ -30,14 +30,9 @@ object pepita {
 		energia -= 9
 	}
 
-	method subirEnergia() {
-
-	}
-
 	method energia() {
 		return energia
 	}
-
 
 	method estado() {
 		return if (self.estaEnDestino()) {
