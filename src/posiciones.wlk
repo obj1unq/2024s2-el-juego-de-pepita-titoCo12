@@ -1,13 +1,12 @@
 import wollok.game.*
-import pepita.*
 
 object arriba {
     method sigPosicion(position) {
         return position.up(1)
     }
 
-    method sigEsBorde() {
-        return pepita.position() == game.at(pepita.position.x(),game.height() - 1)
+    method sigEsBorde(pos) {
+        return pos == game.at(pos.x(),game.height() - 1)
     }
 }
 
@@ -16,8 +15,8 @@ object izquierda {
         return position.left(1)
     }
 
-    method sigEsBorde() {
-        return pepita.position() == game.at(0, pepita.position.y())
+    method sigEsBorde(pos) {
+        return pos == game.at(0,pos.y())
     }
 }
 
@@ -26,8 +25,8 @@ object abajo {
         return position.down(1)
     }
 
-    method sigEsBorde() {
-        return pepita.position() == game.at(pepita.position.x(), 0)
+    method sigEsBorde(pos) {
+        return pos == game.at(pos.x(),0)
     }
 }
 
@@ -36,7 +35,7 @@ object derecha {
         return position.right(1)
     }
 
-    method sigEsBorde() {
-        return pepita.position() == game.at(game.width() - 1, pepita.position.y())
+    method sigEsBorde(pos) {
+        return pos == game.at(game.width() - 1,pos.y())
     }
 }
