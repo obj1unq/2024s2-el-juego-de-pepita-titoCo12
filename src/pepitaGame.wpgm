@@ -16,6 +16,7 @@ program pepitaGame {
 	game.addVisual(silvestre)
 	game.addVisual(alpiste)
 	game.addVisual(manzana)
+	pepita.iniciarAnimacion()
 	keyboard.up().onPressDo({pepita.mover(arriba)})
 	keyboard.left().onPressDo({pepita.mover(izquierda)})
 	keyboard.down().onPressDo({pepita.mover(abajo)})

@@ -5,6 +5,7 @@ import comidas.*
 
 
 object pepita {
+	var property image = "pepita.png"
 	var energia = 100
 	var property position = game.at(3,5)
 	const destino = nido 
@@ -50,9 +51,16 @@ object pepita {
 		return (energia <= 0)
 	}
 
-	method image() {
-		return "pepita" + self.estado() + ".png"
+	method otraImagen() {
+		return if (self.image() == "pepita.png") {"pepita-grande.png"}
+		else "pepita.png"
 	}
+
+
+	method iniciarAnimacion() {
+		game.onTick(1, "refrescarImagen" , {self.image(self.otraImagen())})
+	}
+
 
 	method estaEnDestino() {
 		return (position == destino.position())
